@@ -1,17 +1,11 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 
-import Header from "../../components/header";
-import Section from "../../components/section";
-import Main from "../../components/main";
-
-
-
+import Header from "@/components/header";
+import Section from "@/components/Section";
+import Main from "@/components/main";
 
 export default function Home() {
-
-
-
   return (
     <>
       <Head>
@@ -21,20 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <Header />
-        <div className={styles.content}>
+      <Header />
+      <div className={styles.content}>
         <Section />
-        <Main/>
-        
-        </div>
-        
+        <Main />
+      </div>
 
-
-      <footer className={styles.footer}>
-
-
-      </footer>
-
+      <footer className={styles.footer}></footer>
     </>
   );
 }

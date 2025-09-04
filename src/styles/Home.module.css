@@ -91,12 +91,7 @@
   box-sizing: border-box;
   transition: all 0.3s ease;
   color: #fff;
-   
 }
-
-
-
-
 
 .itemBox span {
   display: block;
@@ -612,3 +607,315 @@
   padding: 10px; /* para não encostar nas bordas */
   box-sizing: border-box;
 }
+
+/* ==========================
+      unidades
+   ==========================*/
+
+.unidades {
+  display: flex;
+  flex-direction: row;
+  background-color: #e0e0e0;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  padding: 20px;
+  width: 1045px;
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.navButton {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #d0d0d0;
+}
+
+.divInputButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divInputButton button {
+  background-color: #fdc816;
+  font-weight: 700;
+  width: 134px;
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+}
+
+.divUnidadeCaixa {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.divNome {
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 286px;
+}
+
+.divNome p {
+  font-size: 14px;
+}
+
+.divNomeContent {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  font-weight: 700;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 20px 0 20px;
+  background: #dddddd;
+}
+
+.divParagrafoGeral {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.divParagrafo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+}
+
+.divLinhaInformacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.divInformacoes {
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  width: 685px;
+  height: 400px;
+}
+
+.divInfoContentZero {
+  display: flex;
+}
+
+.divInfoContentUm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 20px;
+  width: 225px;
+}
+
+.divInfoContentUm h2 {
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+.divInfoContentUm p {
+  font-size: 16px;
+  color: #34495e;
+}
+
+.divInfoContentDois {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 20px;
+  width: 225px;
+}
+
+.divInfoContentDois h2 {
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+.divInfoContentDois p {
+  font-size: 16px;
+  color: #34495e;
+}
+
+.divInfoContentTres {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 20px;
+  width: 225px;
+}
+
+.divInfoContentTres h2 {
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+.divInfoContentTres p {
+  font-size: 16px;
+  color: #34495e;
+}
+
+.editarInfo h2 {
+  color: #fdc816;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 10px 0 0;
+}
+
+.divInfoContent {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.imgIformacao {
+  display: flex;
+  padding: 20px 0 0 20px;
+  gap: 10px;
+}
+
+.divBotao {
+  padding: 20px 20px 0 0;
+}
+
+.divBotao button {
+  width: 172px;
+  height: 35px;
+  color: #fff;
+  border: none;
+  background-color: #2ecc71;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 20px;
+}
+
+/* Proprietário */
+
+.divProprietario {
+  width: 685px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 5px 0px 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.divProprietario h2 {
+  font-size: 16px;
+  color: #7f8c8d;
+  display: flex;
+  align-items: center;
+}
+
+.divProprietario h3 {
+  font-size: 16px;
+  color: #34495e;
+  display: flex;
+  align-items: center;
+}
+
+.divProprietarioContent {
+  display: flex;
+}
+
+.divProprietarioContentDois {
+  display: flex;
+  gap: 10px;
+}
+
+.divProprietario h4 {
+  font-size: 28px;
+}
+
+/* src/components/NovaUnidade.module.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* fundo escuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: 845px;
+  height: 350px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  z-index: 1001;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  background: #2ecc71;
+ 
+}
+
+.divDisplayFlex{
+  display: flex;
+   gap: 15px; /* espaço entre os campos */
+}
+
+.divModalNovaUnidade {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* espaço entre label e input */
+}
+
+.divModalNovaUnidade label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.divModalNovaUnidade input {
+  width: 200px;
+  height: 36px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.divModalNovaUnidadeDois {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* espaço entre label e input */
+}
+
+.divModalNovaUnidadeDois label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.divModalNovaUnidadeDois input{
+  width: 200px;
+  height: 36px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
